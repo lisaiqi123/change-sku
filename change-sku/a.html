@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="goods-detailes.css">
+</head>
+<script>
+    var Width = window.innerWidth;
+    if (Width > 720) {
+        document.documentElement.style.fontSize = 192 + 'px';
+    } else {
+        document.documentElement.style.fontSize = ((Width / 375) * 100) + 'px';
+    }
+    window.onresize = function() {
+        var changeWidth = window.innerWidth;
+        if (changeWidth > 720) {
+            document.documentElement.style.fontSize = 192 + 'px';
+        } else {
+            document.documentElement.style.fontSize = ((changeWidth / 375) * 100) + 'px';
+        }
+    };
+</script>
+
+<body>
+    <div class="G-bg-white G-Mt-10">
+        <div class="g-choice-style">
+            <div id='skuPlan'>
+                <div class="item-sku fl-row-grid">
+                    <span class="item-title">颜色</span>
+                    <div class="sku-items fl-row-grid">
+                        <a href=" " class="external active">白色</a >
+                        <a href="javascript:;" class="external">银色</a >
+                        <a href="javascript:;" class="external">银色</a >
+                        <a href="javascript:;" class="external">银色</a >
+                        <a href="javascript:;" class="external">银色</a >
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+</body>
+<script src="jquery-1.12.3.min.js"></script>
+<script src="goods-detailes.js"></script>
+</html>
