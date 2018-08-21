@@ -6,5 +6,7 @@ skuFn.firstSku(); //进来默认获取sku组合高亮，我这里默认上架第
 
 skuFn.createSku(); //渲染sku模板<br/>
 
-skuFn.comSku(); //给sku模板渲染虚线灰，实线灰<br/>
+skuFn.comSku(); //给sku模板渲染虚线灰，实线灰,点击实线灰的时候会调用<br/>
+
+skuFn.oneSku(); //给sku模板渲染虚线灰，实线灰，点击虚线灰的时候会调用<br/>
 
