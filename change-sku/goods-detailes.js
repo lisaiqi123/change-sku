@@ -195,7 +195,7 @@ var skuFn = {
         });
         $.toast("没有此组合");
         skuFn.sliceSku();
-        skuFn.first_sku = skuFn.click_sku.slice();
+        skuFn.first_sku = skuFn.click_sku.slice(); //slice(),深拷贝，相当于skuFn.first_sku,skuFn.click_sku是两个数组。
         skuFn.createSku();
         skuFn.oneSku();
     }
