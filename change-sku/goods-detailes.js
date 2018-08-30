@@ -150,7 +150,7 @@ var skuFn = {
         };
         skuFn.click_sku = skuFn.first_sku.slice();
     },
-    changeSku: function() {
+    initData: function() {
         skuFn.on_sku = []; //上架组合
         skuFn.off_sku = []; //下架组合
         skuFn.first_sku = []; //第一个上架组合高亮
@@ -160,6 +160,9 @@ var skuFn = {
         skuFn.sku_on_id_arr2 = []; //第一行上架ID
         skuFn.sku_on_id_arr3 = []; //第一行上架ID
         skuFn.click_sku = []; //点击组合
+    },
+    changeSku: function() {
+        skuFn.initData();
 
         var _th = $(this);
         _th.addClass("active").siblings().removeClass("active");
@@ -173,15 +176,7 @@ var skuFn = {
         skuFn.comSku();
     },
     changeSkuOther: function() {
-        skuFn.on_sku = []; //上架组合
-        skuFn.off_sku = []; //下架组合
-        skuFn.first_sku = []; //第一个上架组合高亮
-        skuFn.sku_off_id_arr = []; //每个属性下架id组合
-        skuFn.sku_off_id_arr2 = []; //第一行下架ID
-        skuFn.sku_on_id_arr = []; //每个属性上架id组合
-        skuFn.sku_on_id_arr2 = []; //第一行上架ID
-        skuFn.sku_on_id_arr3 = []; //第一行上架ID
-        skuFn.click_sku = []; //点击组合
+        skuFn.initData();
 
         var _th = $(this);
 
