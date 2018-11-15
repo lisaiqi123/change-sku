@@ -1,7 +1,7 @@
 # change-sku
 
 ## 函数说明
-git clone https://github.com/lisaiqi123/change-sku.git
+git clone https://github.com/lisaiqi123/change-sku.git <br/>
 直接打开HTML文件
 
 ## 函数说明
