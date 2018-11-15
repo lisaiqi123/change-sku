@@ -1,6 +1,8 @@
 # change-sku
+
 ## 函数说明
-git clone 
+git clone https://github.com/lisaiqi123/change-sku.git
+直接打开HTML文件
 
 ## 函数说明
 skuFn.sliceSku(); //区分上下架<br/>
